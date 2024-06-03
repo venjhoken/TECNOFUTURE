@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    font-family: 'Open sans', sans-serif;
+  
+  }
+  
+  header {
+    background: #000dff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, hsla(236, 100%, 50%, 0.5),
+        #3b385a), url(/imagen2/IMG-20230820-WA0054.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, hsla(0, 0%, 0%, 0.5),
+        #3b3843), url(/imagen2/IMG-20230820-WA0054.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    border-bottom: 20px solid #ff8c00;
+  
+  }
+  
+  nav {
+    background-color: #444;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff9900;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+  }
+  
+  .textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  
+  }
+  
+  .contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .titulo {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  
+  main .sobre-nosotros {
+    padding: 30px 0 60px 0;
+  }
+  
+  .contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .imagen-about-us {
+    width: 48%;
+  }
+  
+  .sobre-nosotros .contenido-textos {
+    width: 48%;
+  }
+  
+  .contenido-textos h3 {
+    margin-bottom: 15px;
+  }
+  
+  .contenido-textos h3 span {
+    background: #000000;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+  }
+  
+  .contenido-textos p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+  }
+  
+  
+  
+  /* footer */
+  /* Pie de página */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  form>div {
+    display: flex;
+    background: #fff;
+    padding: 8px 21px 8px 25px;
+    border-radius: 30px;
+    border: 1px solid #cad3dc;
+    box-shadow: rgba(255, 255, 255, 0.5) -8px -8px 15px,
+      rgba(215, 14, 14, 0.1) 10px 10px 10px,
+      rgba(255, 255, 255, 0.5) -8px -8px 15px inset,
+      rgba(0, 0, 0, 0.1) 10px 10px 10px inset;
+  }
+  
+  form input {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    padding-left: 22px;
+    background-image: url(/);
+    background-size: 19px;
+    background-repeat: no-repeat;
+    width: 0px;
+    transition: all 1s;
+  }
+  
+  form input:focus {
+    outline: none;
+    width: 300px;
+  
+  }

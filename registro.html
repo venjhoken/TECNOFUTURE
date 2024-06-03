@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Producto</title>
+  <link rel="stylesheet" href="/CSS/estilos1.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="Productos.html">Inicio</a></li>
+      <li><a href="vistaProductos.html">Vista de Productos</a></li>
+      <li><a href="tablaDatos.html">Tabla de Productos</a></li>
+    </ul>
+  </nav>
+
+
+  <h1>REGISTRO DE PRODUCTOS</h1>
+  <form id="productForm">
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto" required>
+
+    <select id="categoria" name="categoria" required>
+      <option value="">Selecciona una categoría</option>
+      <option value="Audifonos">Audifonos</option>
+      <option value="Mause">Mause</option>
+      <option value="Teclado">Teclado</option>
+      <option value="Impresora">Impresora</option>
+      <option value="Monitor">Monitor</option>
+    </select>
+
+
+    <label for="Imagen">Imagen</label>
+    <input type="file" id="Imagen" accept="image/*" required><br>
+    <input type="text" id="codigo" name="codigo" placeholder="Código" required>
+    <input type="number" id="precio" name="precio" placeholder="Precio" required>
+    <input type="text" id="color" name="color" placeholder="Color" required>
+    <input type="text" id="marca" name="marca" placeholder="Marca" required>
+    <input type="text" id="modelo" name="modelo" placeholder="Modelo" required>
+    <button type="submit">Registrar Producto</button>
+    <div id="loading-message">Espere un momento...</div>
+    <div id="complete-message">Registro completo</div>
+  </form>
+
+  <div id="error-message" style="display:none;">Debe llenar todos los campos. Por favor, revise el formulario.</div>
+
+
+  <script src="/js/productos.js"></script>
+</body>
+
+</html>

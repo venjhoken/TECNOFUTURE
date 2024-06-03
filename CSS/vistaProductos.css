@@ -1,0 +1,154 @@
+body {
+    background-color: #dcdcdc;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .card {
+    background-color: #fff;
+    width: 230px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .card:hover img {
+    transform: scale(1.2) translateX(-40px);
+  }
+  
+  .card__img {
+    height: 250px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .card__img img {
+    height: 100%;
+    width: 100%;
+    transition: 0.7s;
+  }
+  
+  .barra_lateral_card {
+    height: 130px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .barra_lateral_card span {
+    padding: 7px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    transform: translateX(40px);
+  }
+  
+  .card__description {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+  
+  .text__description {
+    color: #333;
+    display: block;
+    width: 100%;
+  }
+  
+  .text__description {
+    color: #333;
+    display: block;
+    width: 100%;
+  }
+  
+  .category {
+    color: #333;
+    display: block;
+    width: 100%;
+  }
+  
+  .code {
+    color: #333;
+    display: block;
+    width: 100%;
+  }
+  
+  .color {
+    color: #333;
+    display: block;
+    width: 100%;
+  }
+  
+  .brand {
+    color: #333;
+    display: block;
+    width: 100%;
+  }
+  
+  .model {
+    color: #333;
+    display: block;
+    width: 100%;
+  }
+  
+  .price {
+    color: red;
+  }
+  
+  nav {
+    background-color: #444;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff9900;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
